@@ -18,6 +18,12 @@ This project involves predicting house prices in Bengaluru using machine learnin
   - **`templates/`**: Contains HTML templates:
     - `index.html`: The main HTML file for the web interface.
   - **`static/`**: Contains static files (CSS and JS).
+ 
+ ## HTML Frontend
+
+Below is a screenshot of the HTML frontend for the web application:
+
+![HTML Frontend](images/frontend.png)
 
 ## Setup Instructions
 

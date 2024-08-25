@@ -23,7 +23,7 @@ This project involves predicting house prices in Bengaluru using machine learnin
 
 Below is a screenshot of the HTML frontend for the web application:
 
-![HTML Frontend]([images/frontend.png](https://res.cloudinary.com/dvdstmxrr/image/upload/v1724575618/frontend_un7ot3.png))
+![HTML Frontend](https://res.cloudinary.com/dvdstmxrr/image/upload/v1724575618/frontend_un7ot3.png)
 
 ## Setup Instructions
 

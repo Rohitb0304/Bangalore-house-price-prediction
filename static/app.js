@@ -3,7 +3,7 @@ function onPageLoad() {
     console.log("Document loaded");
 
     // URL to get the location names
-    var url = "https://bangalore-house-price-prediction-iq48.onrender.com/"; // Adjust URL if necessary
+    var url = "https://bangalore-house-price-prediction-iq48.onrender.com/get_location_names"; // Updated URL for getting location names
 
     // Fetch the location names
     $.get(url, function(data, status) {
@@ -69,17 +69,17 @@ function onClickedEstimatePrice() {
     console.log("Estimate price button clicked");
     
     var sqft = document.getElementById("uiSqft").value;
-    var bhk = getBHKValue(); // Ensure this function is defined
-    var bathrooms = getBathValue(); // Ensure this function is defined
+    var bhk = getBHKValue(); 
+    var bathrooms = getBathValue(); 
     var location = getSelectedLocation();
     var estPrice = document.getElementById("uiEstimatedPrice");
 
-    var url = "http://127.0.0.1:5000/predict_home_price"; // Adjust URL if necessary
+    var url = "https://bangalore-house-price-prediction-iq48.onrender.com/predict_home_price"; // Updated URL for predicting price
 
     $.ajax({
         url: url,
         type: 'POST',
-        contentType: 'application/json', // Ensure content type is set
+        contentType: 'application/json',
         data: JSON.stringify({
             total_sqft: parseFloat(sqft),
             bhk: bhk,

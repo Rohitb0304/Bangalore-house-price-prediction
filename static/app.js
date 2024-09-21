@@ -3,7 +3,7 @@ function onPageLoad() {
     console.log("Document loaded");
 
     // URL to get the location names
-    var url = "http://127.0.0.1:5000/get_location_names"; // Adjust URL if necessary
+    var url = "https://bangalore-house-price-prediction-iq48.onrender.com/"; // Adjust URL if necessary
 
     // Fetch the location names
     $.get(url, function(data, status) {

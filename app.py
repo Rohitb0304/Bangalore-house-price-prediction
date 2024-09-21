@@ -76,10 +76,11 @@ def predict_home_price():
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
-# Load artifacts before the first request
-@app.before_first_request
-def before_first_request():
-    load_saved_artifacts()
+# Load artifacts before every request
+@app.before_request
+def before_request():
+    if __data_columns is None or __locations is None or __model is None:
+        load_saved_artifacts()
 
 # Run the app
 if __name__ == "__main__":

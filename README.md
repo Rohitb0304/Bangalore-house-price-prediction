@@ -7,6 +7,10 @@ This project involves predicting house prices in Bengaluru using machine learnin
 1. **Data Preprocessing and Model Training**: Analyzing and preparing data, training a machine learning model, and saving the trained model.
 2. **Web Application**: A Flask web application that allows users to input house features and get predicted prices using the trained model.
 
+## Deploy Link:
+https://bangalore-house-price-prediction-iq48.onrender.com
+
+
 ## Project Structure
 
 - **`model/`**: Contains the Jupyter Notebook (`.ipynb`) file and dataset (`Bengaluru_House_Data.csv`).
